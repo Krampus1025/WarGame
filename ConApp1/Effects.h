@@ -17,6 +17,7 @@ enum StatusEffects {
 };
 
 enum WeaponEnchantments {
+	None,
 	Lightning,
 	Fire,
 	Oil,
@@ -24,12 +25,35 @@ enum WeaponEnchantments {
 };
 
 enum ArmorEnchantments {
+	None,
 	Protection,
 	Reflect,
 	Speed,
 	Slick
 };
 
-struct 
+typedef void(*tHandleEffect)(CharacterClass& cur, CharacterClass& enemy);
+
+struct WeaponEffect {
+	tHandleEffect m_handler;
+	WeaponEnchantments m_type;
+};
+
+struct ArmorEffect {
+	tHandleEffect m_handler;
+	ArmorEnchantments m_type;
+};
+
+// Weapon effects
+void LightningEnchantment(CharacterClass& cur, CharacterClass& enemy);
+void FireEnchantment(CharacterClass& cur, CharacterClass& enemy);
+void OilEnchantment(CharacterClass& cur, CharacterClass& enemy);
+void BlindingEnchantment(CharacterClass& cur, CharacterClass& enemy);
+
+// Armor effects
+void ProtectionEnchantment(CharacterClass& cur, CharacterClass& enemy);
+void ReflectEnchantment(CharacterClass& cur, CharacterClass& enemy);
+void SpeedEnchantment(CharacterClass& cur, CharacterClass& enemy);
+void SlickEnchantment(CharacterClass& cur, CharacterClass& enemy);
 
 #endif

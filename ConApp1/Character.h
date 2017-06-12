@@ -3,6 +3,14 @@
 
 class CharacterClass {
 public:
+	void Attack();
+	void CastSpell();
+	void Shield();
+	void Dodge();
+
+	void HandleActiveEffects();
+	void HandlePassiveEffects();
+
 protected:
 	float m_hp, m_maxhp;
 	float m_mp, m_maxmp;
@@ -10,22 +18,6 @@ protected:
 	float m_dodgeRate;
 	ArmorSet m_armor;
 	Weapon m_weapon;
-};
-
-class Wizard : public CharacterClass {
-	
-};
-
-class Warrior : public CharacterClass {
-
-};
-
-class Archer : public CharacterClass {
-
-};
-
-class Test {
-
 };
 
 #endif
