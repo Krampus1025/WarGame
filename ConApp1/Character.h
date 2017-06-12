@@ -12,4 +12,20 @@ protected:
 	Weapon m_weapon;
 };
 
+class Wizard : public CharacterClass {
+	
+};
+
+class Warrior : public CharacterClass {
+
+};
+
+class Archer : public CharacterClass {
+
+};
+
+class Test {
+
+};
+
 #endif
