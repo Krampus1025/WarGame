@@ -25,6 +25,9 @@ struct Armor {
 	float m_dodgeMod;
 	ArmorWeight m_weight;
 	ArmorType m_type;
+
+	bool m_enchanted;
+	ArmorEffect m_enchantment;
 };
 
 struct ArmorSet {

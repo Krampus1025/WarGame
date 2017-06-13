@@ -59,6 +59,7 @@ struct Weapon {
 	float m_manaCost;
 
 	bool m_enchanted;
+	WeaponEffect m_enchantment;
 };
 
 #endif
