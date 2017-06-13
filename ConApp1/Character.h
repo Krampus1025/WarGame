@@ -1,7 +1,7 @@
 #ifndef CHARACTER_H
 #define CHARACTER_H
 
-/*
+/* ACTION DESCRIPTION
  * Possible choices for a character to take:
  * 1) Move
  * 2) Dodge
@@ -14,6 +14,13 @@
  *
  * Certain actions will have the ability to be interuppted since they will take time, so making
  * longer moves at strategic times will be very important
+ */
+
+/* STAT DESCRIPTION
+ * Player health will vary between 50 to 200. 100 will be average
+ * It will be handled as a float
+ * Defense will have to be calculated to make it fair, where armor saves you
+ * but doesn't make it impossible to kill someone with armor
  */
 
 class CharacterClass {

@@ -2,6 +2,11 @@
 
 #include "Effects.h"
 
+// Empty effect
+void Empty(CharacterClass& cur, CharacterClass& enemy) {
+	// SHOULD NEVER BE CALLED
+}
+
 // Weapon effects
 void LightningEnchantment(CharacterClass& cur, CharacterClass& enemy) {
 
